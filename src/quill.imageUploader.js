@@ -10,6 +10,10 @@ class ImageUploader {
         this.options = options;
         this.range = null;
 
+        console.log('====================================')
+        console.log('new ImageUploader()', options)
+        console.log('====================================')
+
         if (typeof this.options.upload !== "function")
             console.warn(
                 "[Missing config] upload function that returns a promise is required"
