@@ -1,6 +1,8 @@
 import LoadingImage from "./blots/image.js";
 
-import "./quill.imageUploader.css";
+// AK: removed for compatbility with Next.js. Import the CSS separately in _app.tsx.
+// import "./quill.imageUploader.css";
+// 
 
 class ImageUploader {
     constructor(quill, options) {
