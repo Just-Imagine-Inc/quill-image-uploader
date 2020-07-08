@@ -1,3 +1,9 @@
+# Ikaria Fork Notes
+
+In order for this package to work with ikaria-web and Next.js, had to remove the css import in `src/quill.imageUploader.js`. So to to use this make sure that the css file is imported in `_app.tsx`.
+
+---
+
 # Quill ImageHandler Module
 
 A module for Quill rich text editor to allow images to be uploaded to a server instead of being base64 encoded.
