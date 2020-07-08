@@ -2,17 +2,12 @@ import LoadingImage from "./blots/image.js";
 
 // AK: removed for compatbility with Next.js. Import the CSS separately in _app.tsx.
 // import "./quill.imageUploader.css";
-// 
 
 class ImageUploader {
     constructor(quill, options) {
         this.quill = quill;
         this.options = options;
         this.range = null;
-
-        console.log('====================================')
-        console.log('new ImageUploader()', options)
-        console.log('====================================')
 
         if (typeof this.options.upload !== "function")
             console.warn(
