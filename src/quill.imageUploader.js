@@ -1,5 +1,4 @@
-// import LoadingImage from "./blots/image.js";
-const LoadingImage = require("./blots/image.js");
+//import LoadingImage from "./blots/image.js";
 
 // AK: removed for compatbility with Next.js. Import the CSS separately in _app.tsx.
 // import "./quill.imageUploader.css";
@@ -148,13 +147,13 @@ class ImageUploader {
     }
 
     insertBase64Image(url) {
-        const range = this.range;
-        this.quill.insertEmbed(
-            range.index,
-            LoadingImage.blotName,
-            `${url}`,
-            "user"
-        );
+//         const range = this.range;
+//         this.quill.insertEmbed(
+//             range.index,
+//             LoadingImage.blotName,
+//             `${url}`,
+//             "user"
+//         );
     }
 
     insertToEditor(url) {
