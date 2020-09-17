@@ -1,4 +1,4 @@
-//import LoadingImage from "./blots/image.js";
+// import LoadingImage from "./blots/image.js";
 
 // AK: removed for compatbility with Next.js. Import the CSS separately in _app.tsx.
 // import "./quill.imageUploader.css";
@@ -147,19 +147,19 @@ class ImageUploader {
     }
 
     insertBase64Image(url) {
-//         const range = this.range;
-//         this.quill.insertEmbed(
-//             range.index,
-//             LoadingImage.blotName,
-//             `${url}`,
-//             "user"
-//         );
+        //         const range = this.range;
+        //         this.quill.insertEmbed(
+        //             range.index,
+        //             LoadingImage.blotName,
+        //             `${url}`,
+        //             "user"
+        //         );
     }
 
     insertToEditor(url) {
         const range = this.range;
         // Delete the placeholder image
-        this.quill.deleteText(range.index, 3, "user");
+        // this.quill.deleteText(range.index, 3, "user");
         // Insert the server saved image
         this.quill.insertEmbed(range.index, "image", `${url}`, "user");
 
